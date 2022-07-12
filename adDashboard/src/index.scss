@@ -1,0 +1,26 @@
+// @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+// @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+
+:root {
+  // --font-base: "DM Sans", sans-serif;
+  // --font-style: 'Comfortaa', cursive;
+  // --font-style2: 'Montserrat', sans-serif;
+  --primary-color: #f58220;
+  --primary-grad: linear-gradient(106.85deg, #FE5A13 3.96%, #F16F11 79.7%, #F38B10 96.25%);
+  --secondary-color: #f03434;
+  --dark-color: #212529;
+  --p-color: #212529;
+  --color-lg-text: #ececec;
+  --bg-color: #FFFAF8;
+  --bg: rgba(252, 254, 254, 0.562);
+  --drop-shadow: 0px 21.2308px 24.3077px rgba(214, 187, 148, 0.1)
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  /* cursor: none; */
+}

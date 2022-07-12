@@ -1,0 +1,103 @@
+.app__header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: 100vh;
+    .app__header-img {
+      width: 25rem;
+      height: 25rem;
+      border: 0.41rem solid rgb(254, 136, 73);
+      border-radius: 50%;
+      transition: all 0.53s ease-in-out;
+      animation-name: ripples ;
+      animation-duration: 3s;
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      &:hover {
+        box-shadow: 0 0 rgba(247, 155, 34, 0.785), 0 0 0 16px rgba(162, 110, 42, 0.539),
+        0 0 0 32px rgba(188, 125, 80, 0.433), 0 0 0 48px rgba(220, 195, 141, 0.2);
+      }
+    }
+  
+    @media screen and (max-width: 770px) {
+  
+      align-content: center;
+      padding-top: 4rem;
+      gap: 4rem;
+        
+      .app__header-title{
+        padding-top: 5rem;
+      }
+  
+      .head-text{
+        font-size: 2.5rem;
+      }
+  
+      .p2-text{
+        font-size: .9rem;
+      }
+        .app__header-img {
+          width: 15rem;
+          height: 15rem;
+        }
+      
+    }    
+    @media screen and (max-width: 568px) {
+  
+      .app__header-title{
+        padding: 1.5rem 1rem;
+      }
+  
+      .p2-text{
+        font-size: .8rem;
+      }
+        .app__header-img {
+          width: 15rem;
+          height: 15rem;
+        }
+      
+      
+    }    
+    
+  }
+  
+  
+    @keyframes ripples {
+        from{
+          box-shadow: 0 0 rgba(255, 146, 88, 0.061), 0 0 0 16px rgba(239, 154, 70, 0.054),
+          0 0 0 32px rgba(255, 213, 108, 0.043), 0 0 0 48px rgba(255, 203, 135, 0.02);
+        }
+      to {
+          box-shadow: 0 0 rgba(255, 194, 88, 0.961), 0 0 0 16px rgba(239, 157, 70, 0.539),
+          0 0 0 32px rgba(255, 201, 108, 0.433), 0 0 0 48px rgba(255, 215, 135, 0.2);
+      }
+    }
+  
+  
+  .app__header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+
+.app__about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.app__header-img2{
+   img{ border-radius: 5%;
+}
+}

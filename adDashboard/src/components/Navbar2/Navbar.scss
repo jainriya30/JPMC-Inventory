@@ -1,0 +1,129 @@
+.app__navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.422);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: fixed;
+    z-index: 5;
+  }
+  
+  .app__navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  
+    img {
+      width: 100px;
+      height: 100%;
+  
+      @media screen and (min-width: 2000px) {
+        width: 180px;
+        height: 40px;
+      }
+    }
+  }
+  
+  .app__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    li {
+      margin: 0 1rem;
+      cursor: pointer;
+  
+      flex-direction: column;
+  
+      a {
+        color: var(--grey-color);
+        text-decoration: none;
+        flex-direction: column;
+        text-transform: uppercase;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: var(--secondary-color);
+        }
+      }
+  
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+  
+  .app__navbar-float{
+    display: none;
+  }
+  
+  
+  #Connect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    padding: .3rem .7rem;
+    border-radius: 30px;
+    border: #ffb727 1px solid;
+    color: #323232;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+    box-shadow: #d48b24 0px 0px 10px;
+    color: white;
+    background: var(--primary-grad);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+      
+  .app__navbar-float {
+      background-color: rgba(255, 255, 255, 0.63);
+      border: 1px solid rgba(255, 228, 179, 0.777);
+      width: max-content;
+      display: block;
+      padding: 0.7rem 1.7rem;
+      position: fixed;
+      font-size: 1.17rem;
+      z-index: 500;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 2rem;
+      border-radius: 3rem;
+      backdrop-filter: blur(15px);
+    
+      ul {
+        display: flex;
+        gap: 0.8rem;
+        a {
+          padding: 0.7rem;
+          display: flex;
+          background: transparent;
+          align-items: center;
+          border-radius: 50%;
+          justify-content: center;
+          color: rgb(255, 122, 6);
+    
+          &:hover {
+            background-color: rgb(255, 200, 111);
+            color: rgb(255, 255, 255);
+          }
+        }
+      }
+    }
+    
+  }
+      
+
+.links{
+    text-decoration: none;
+    color: var(--grey-color);
+}

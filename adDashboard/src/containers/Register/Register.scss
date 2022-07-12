@@ -1,0 +1,18 @@
+.app__image{
+    background: no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.stjudechild.org/images/main-slider/image-5.jpg') 100%;
+    height:500px;  
+    border-radius: 12px;
+    background-size: cover;
+    transition: all .3s ease-in-out;
+    transform: scale(0.85);
+    .app__image-inner{
+        top: 10%;
+        left: 0;
+        position: relative;
+        transform: scale(1.25);
+    }
+}
